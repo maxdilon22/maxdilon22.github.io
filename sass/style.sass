@@ -1,15 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic-ext);
 
-* {
+*
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: Roboto, sans-serif
-}
 
-a {
+a 
     text-decoration: none
-}
 
 .btn {
     width: 220px;
@@ -25,79 +23,76 @@ a {
     cursor: pointer;
     transition: .3s all;
     outline: 0
-}
 
-.btn_white {
+
+.btn_white 
     background-color: #fff
-}
 
-.btn_dark {
+
+.btn_dark 
     background-color: #303030;
     color: #fff;
     border: none
-}
 
-.btn_min {
+
+.btn_min 
     height: 50px
-}
 
-.btn:hover {
+
+.btn:hover 
     box-shadow: 0 4px 30px rgba(0, 0, 0, .3)
-}
 
-.container {
+
+.container 
     max-width: 1200px;
     margin: 0 auto
-}
 
-.divider {
+
+.divider 
     width: 330px;
     height: 1px;
     margin: 0 auto;
     background-color: rgba(0, 0, 0, .5)
-}
 
-.title {
+
+.title 
     font-size: 36px;
     font-weight: 400
-}
 
-.header {
+
+.header 
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 150px;
     padding: 0 100px
-}
 
-.header__left-block {
+
+.header__left-block 
     display: flex;
     justify-content: space-between;
     min-width: 550px
-}
 
-.header__logo {
+
+.header__logo 
     max-width: 170px
-}
 
-.header__logo img {
+
+.header__logo img
     width: 100%
-}
 
-.header__links {
+.header__links
     display: flex;
     align-items: center
-}
 
-.header__link {
+.header__link
     position: relative;
     margin-right: 45px;
     font-weight: 700;
     font-size: 18px;
     color: #303030
-}
 
-.header__link:after {
+.header__link:after
     content: '';
     position: absolute;
     display: block;
@@ -107,13 +102,11 @@ a {
     z-index: -1;
     height: 8px;
     background: #54ed39
-}
 
-.header__link:last-child {
+.header__link:last-child
     margin-right: 0
-}
 
-.sidepanel {
+.sidepanel
     position: fixed;
     left: 60px;
     top: 240px;
@@ -123,20 +116,20 @@ a {
     flex-direction: column;
     justify-content: space-between;
     align-items: center
-}
 
-.sidepanel__text {
+
+.sidepanel__text 
     width: 120px;
     height: 120px;
     font-size: 14px
-}
 
-.sidepanel__text span {
+
+.sidepanel__text span 
     display: flex;
     transform: rotate(-90deg) translateX(-50px)
-}
 
-.sidepanel__divider {
+
+.sidepanel__divider 
     width: 1px;
     height: 165px;
     background-color: #000
@@ -713,27 +706,4 @@ a {
     display: block;
     width: 280px;
     margin: 0 auto
-}
-
-.show {
-    display: block;
-}
-
-.hide {
-    display: none;
-}
-
-.fade {
-    animation-name: fade;
-    -webkit-animation-name:fade;
-    animation-duration: 1.5s;
-}
-
-@keyframes fade {
-    from {
-        opacity: .1;
-    }
-    to {
-        opacity: 1;
-    }
 }
