@@ -81,5 +81,42 @@ window.addEventListener('DOMContentLoaded',() => {
               }
     }
     setClock('.timer',deadline);
+
+
+    // modal
+    const modal = document.querySelector('.modal');
+    const btnModal = document.querySelectorAll('[data-modal]');
+    const btnClose = document.querySelector('[data-close]');
+
+    btnModal.forEach( btn => {
+        btn.addEventListener('click', () => {
+            modal.classList.add('show');
+            modal.classList.remove('hide');
+            document.body.style.overflow = 'hideen';
+        });
+    });
+
+    function closeModal() {
+        modal.classList.remove('show');
+        modal.classList.add('hide');
+        document.body.style.overflow = '';
+    }
+
+    btnClose.addEventListener('click', () => {
+        closeModal();
+
+    });
+
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+
+    document.addEventListener('keydown', e => {
+        if (e.code === 'Escape' && modal.classList.contains('show')) {
+            closeModal();
+        }
+    });
   });
  
